@@ -103,7 +103,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let isValid = formValidate(objData)
 
     if (isValid) {
-      $.post('http://127.0.0.1:8000/', objData)
+      $.post('https://kenex.herokuapp.com/', objData)
       popupOpen()
     } else {
       return
