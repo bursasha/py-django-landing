@@ -1,0 +1,958 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous"/>
+  <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="icon" href="{% static 'icons/logo/favicon.svg' %}" type="image/svg">
+  <title>Smart fólie</title>
+</head>
+
+<body>
+
+  <section class="intro" id="uvod">
+    <div class="container">
+
+      <header class="header">
+        <a class="logo">
+          <div class="logo__wrap">
+            <img src="{% static 'icons/logo/logo.svg' %}" alt="logo" class="logo__img">
+          </div>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#vyhody" class="scroll_to">Výhody</a>
+            </li>
+            <li class="nav__item">
+              <a href="#vlastnosti" class="scroll_to">Vlastnosti</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pouziti" class="scroll_to">Použití</a>
+            </li>
+            <li class="nav__item">
+              <a href="#videa" class="scroll_to">Videa</a>
+            </li>
+            <li class="nav__item">
+              <a href="#galerie" class="scroll_to">Galerie</a>
+            </li>
+            <li class="nav__item">
+              <a href="#kontakty" class="scroll_to">Kontakty</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="intro__signin">
+          <button onclick="document.location='https://www.kenex.cz/login/'">
+            Přihlásit se
+          </button>
+        </div>
+      </header>
+
+      <div class="intro__content">
+          <div class="intro__text">
+             <h1 class="intro__title">
+                Smart fólie — Vše pro Váš komfort
+             </h1>
+             <div class="intro__descr">
+                Kenex s.r.o. nabízí moderní řešení pro zajištění Vašeho soukromí na všech prosklených konstrukcích bez použití žaluzií, záclon a závěsů. Jedná se o chytrou fólii s nastavitelnou průhledností.
+                <br>
+                Smart fólie je speciální polymerní fólie z tekutých krystalů, která se lepí na všechny skleněné plochy, aby se nastavila průhlednost skla.
+             </div>
+             <div class="intro__btn">
+                <button class="intro__btn_buy" onclick="document.location='https://www.kenex.cz/smart-folie/'">Objednat</button>
+             </div>
+          </div>
+
+          <div class="intro__video">
+              <video id="video" width="600px" height="338px" poster="{% static './img/video/video_promo_bg.jpg' %}" src="{% static './videos/section_intro/intro_video.mp4' %}" type="video/mp4">
+              </video>
+              <div class="video__play" id="intro_video_play">
+                <div>
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="pros">
+    <div class="container" id="vyhody">
+
+      <h2 class="title">Jednoduchost & Elegance</h2>
+      <div class="subtitle">Výhody <span>Smart fólie</span></div>
+      <div class="descr">
+        Důležitým prvkem moderního designu jednotlivých místností je instalace různých skleněných konstrukcí: skleněné příčky, okna, prosklené dveře, svítidla atd. Přitom často vzniká potřeba zajištění soukromí některých vybraných prostor. Běžně se na tyto účely používají žaluzie, závěsy, záclony, a podobná provizória. <span>Smart fólie</span> má schopnost nastavit průhlednost v závislosti na dodávaném napětí, od téměř čiré až po naprosto neprůhlednou. <span>Smart fólie</span> tak promění obyčejné sklo v účinný prostředek k zajištění potřebného soukromí ve Vaší místností.
+      </div>
+
+      <div class="pros__content">
+        <div class="pros__item">
+          <div class="pros__icon">
+            <i class="fas fa-eye-slash"></i>
+          </div>
+          <div class="pros__text">
+            <h3 class="pros__title">Soukromí místnosti</h3>
+            <span>Smart fólie</span> – zcela nová technologie v oddělení prostoru kanceláří, které umožní zcela nahradit závěsy a žaluzie. Průhlednost stěn konferenčních místností, jednacích místností nebo jiných kancelářských prostor může být regulována v každém okamžiku.
+          </div>
+        </div>
+
+        <div class="pros__item">
+          <div class="pros__icon">
+            <i class="far fa-star"></i>
+          </div>
+          <div class="pros__text">
+            <h3 class="pros__title">Originální design</h3>
+            Inteligentní přepážky zanechají trvalý dojem na Vaše zákazníky, partnery a zaměstnance. Jedná se o celé zařízení, které může být jak zcela průhledné, tak zcela matné. Efekt <span>Smart fólie</span> je ovládán jednoduchým stisknutím tlačítka na dálkovém ovladači.
+          </div>
+        </div>
+
+        <div class="pros__item">
+          <div class="pros__icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <div class="pros__text">
+            <h3 class="pros__title">Bezpečnost a pohodlí</h3>
+            Zajišťuje rovněž ochranu před infračerveným (IR) a ultrafialovým (UV) zářením, zvyšuje pohodlí a snižuje ohřev místnosti slunečními paprsky. <span>Smart fólie</span> zaručuje také ochranu osob před pořezáním při nechtěném rozbití skla a zvyšuje pevnost oken.
+          </div>
+        </div>
+      </div>
+
+      <button class="pros__btn" onclick="document.location='https://www.kenex.cz/smart-folie/'">Objednat</button>
+
+    </div>
+  </section>
+
+
+  <section class="features" id="vlastnosti">
+
+      <div class="features__content">
+
+        <div class="features__item item__1">
+          <div class="features__icon">
+            <i class="fas fa-charging-station"></i>
+          </div>
+          <div class="features__text">
+            5-7 Wh na m² <br> Nízká spotřeba energie
+          </div>
+        </div>
+
+        <div class="features__item item__2">
+          <div class="features__icon">
+            <i class="far fa-thumbs-up"></i>
+          </div>
+          <div class="features__text">
+            > 10 Let <br> Dlouhá životnost
+          </div>
+        </div>
+
+        <div class="features__item item__3">
+          <div class="features__icon">
+            <i class="fas fa-temperature-high"></i>
+          </div>
+          <div class="features__text">
+            -20°C – +60°C <br> Odolná vůči teplotám
+          </div>
+        </div>
+
+        <div class="features__item item__4">
+          <div class="features__icon">
+            <i class="far fa-calendar-check"></i>
+          </div>
+          <div class="features__text">
+            2 Roky <br> Záruka na fólii
+          </div>
+        </div>
+
+      </div>
+
+  </section>
+
+
+  <section class="usage">
+    <div class="container" id="pouziti">
+
+      <h2 class="title">Použití <span>Smart fólie</span></h2>
+      <div class="descr">
+        To je inovativní řešení, které má širokou škálu uplatnění v oblasti marketingu a propagace. <span>Smart fólie</span> Vám umožní zcela nahradit žaluzie, závěsy, vnitřní příčky, vitríny, statické reklamy.
+        <br>
+        <span>Smart fólie</span> může být vyrobena v jakémkoliv tvaru: trojúhelník, kruh, obdélník se zaoblenými hranami. Můžete z ní vystřihnout všechny tvary, vytvořit otvory, lepit na ohnuté sklo. Díky těmto vlastnostem pomůže Vám realizovat různá designová řešení.
+      </div>
+
+      <div class="usage__content">
+        <div class="usage__tabs">
+
+          <div class="tabs__item">
+            <div class="tabs__head">
+              <div class="tabs__wrap">
+                <div class="tabs__icon">
+                  <i class="fas fa-city"></i>
+                </div>
+                <div class="tabs__title">Kancelář</div>
+              </div>
+              <div class="tabs__down">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+            <div class="tabs__imgs">
+              <div class="tabs__img item__1 img__1"></div>
+              <div class="tabs__img item__1 img__2"></div>
+              <div class="tabs__text">
+                Kanceláře, konferenční místnosti, jednací místnosti, prodejní salony, výstavní pavilony, muzea, supermarkety, bankovní prostory a podobně.
+                <br><br>
+                <span>Smart fólie</span> je skvělým řešením pro kanceláře a banky. V případě potřeby můžete okamžitě rozdělit prostory mezi zónou pro klienta a zónou konzultanta.
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__item">
+            <div class="tabs__head">
+              <div class="tabs__wrap">
+                <div class="tabs__icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="tabs__title">Byt / Rodinný dům</div>
+              </div>
+              <div class="tabs__down">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+            <div class="tabs__imgs">
+              <div class="tabs__img item__2 img__1"></div>
+              <div class="tabs__img item__2 img__2"></div>
+              <div class="tabs__text">
+                <span>Smart fólii</span> lze také použít v koupelně, na WC, na balkoně, v obýváku – aplikovat tam, kde je potřeba oddělit jakoukoliv část místnosti, zlepšit uspořádání prostoru, optimalizovat nastavení osvětlení.
+                <br><br>
+                Sklo je zpravidla v průhledném stavu, aby byly místnosti osvětleny přirozeným světlem. Pomocí <span>Smart fólie</span> lze okna přepnout do neprůhledného stavu.
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs__item">
+            <div class="tabs__head">
+              <div class="tabs__wrap">
+                <div class="tabs__icon">
+                  <i class="fas fa-video"></i>
+                </div>
+                <div class="tabs__title">Obrazovka pro projektory</div>
+              </div>
+              <div class="tabs__down">
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </div>
+            <div class="tabs__imgs">
+              <div class="tabs__img item__3 img__1"></div>
+              <div class="tabs__img item__3 img__2"></div>
+              <div class="tabs__text">
+                Ve vypnutém stavu <span>Smart fólie</span> je krásnou projekční obrazovkou. Při výběru vhodného projektoru dostanete velmi jasný a pěkný obraz. Tato užitečná vlastnost může být použita pro reklamní účely nebo pro barevné provedení vitrín a oken.
+                <br><br>
+                Vytvořte něco, co není k dispozici ostatním. Vaši zákazníci to ocení.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="videos" id="videa">
+    <div class="container">
+
+      <div class="videos__wrap">
+        <div class="videos__text">
+          <h2 class="videos__title">
+            Videa
+          </h2>
+          <div class="videos__descr">
+            Kenex s.r.o. - výhradní distributor významného světového výrobce Smart fólii v ČR.
+            <br>
+            Umožňuje nám poskytnout ty nejlepší ceny, rychlost dodávky a záruku kvality.
+          </div>
+          <button class="videos__btn" onclick="document.location='https://www.kenex.cz/smart-folie/'">Objednat</button>
+        </div>
+
+        <div class="videos__content">
+          <div class="content__left">
+            <div class="content__item">
+              <div class="content__video">
+                <video id="video video__1" poster="{% static './img/video/video_1_bg.png' %}" src="{% static './videos/section_videos/video_1.mp4' %}" type="video/mp4">
+                </video>
+                <div class="video__play video__1" id="videos_video_play_1">
+                  <div>
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__item item__bottom">
+              <div class="content__video">
+                <video id="video video__2" poster="{% static './img/video/video_2_bg.png' %}" src="{% static './videos/section_videos/video_2.mp4' %}" type="video/mp4">
+                </video>
+                <div class="video__play video__2" id="videos_video_play_2">
+                  <div>
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content__right">
+            <div class="content__item">
+              <div class="content__video">
+                <video id="video video__3" poster="{% static './img/video/video_3_bg.png' %}" src="{% static './videos/section_videos/video_3.mp4' %}" type="video/mp4">
+                </video>
+                <div class="video__play video__3" id="videos_video_play_3">
+                  <div>
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__item item__bottom">
+              <div class="content__video">
+                <video id="video video__4" poster="{% static './img/video/video_4_bg.png' %}" src="{% static './videos/section_videos/video_4.mp4' %}" type="video/mp4">
+                </video>
+                <div class="video__play video__4" id="videos_video_play_4">
+                  <div>
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="gallery">
+
+    <h2 class="title" id="galerie">Galerie</h2>
+    <div class="descr">
+      To vše je realizovatelné díky <span>Smart fólii</span>, která působí nejen jako vynikající náhrada záclon a žaluzií, ale také jako plnohodnotná obrazovka zpětné projekce.
+    </div>
+
+    <div class="gallery__content">
+      <div class="gallery__carousel">
+
+        <div class="carousel__item">
+          <div class="carousel__img img__1"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Kancelář</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__2"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Garáž</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__3"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Kancelář</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__4"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Jednací místnost</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__5"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Zasedací sál</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__6"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Kancelář</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__7"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Okno</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__8"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Jednací místnost</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__9"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Kancelář</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__10"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Šatna</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__11"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Koupelna</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__12"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Sprchový kout</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__13"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Terasa</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__14"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Balkón</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__15"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Terasa</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__16"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Balkón</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__17"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Kancelář</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__18"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Kancelář</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__19"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Okno</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__20"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Jednací místnost</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__21"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Lounge room</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__22"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Jídelna</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__23"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Parní lázeň</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__24"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Pracovní stůl</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__img img__25"></div>
+          <div class="carousel__info">
+            <div class="carousel__name">Zasedací místnost</div>
+            <div class="carousel__links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="contacts" id="kontakty">
+
+    <h2 class="title">Napište nám zprávu</h2>
+    <div class="descr dark__descr">
+      Máte nějaké otázky? Zodpovíme je. Prosíme o pečlivé vyplnění kontaktních údajů.
+    </div>
+
+    <div class="contacts__content">
+      <form class="contacts__form" method="POST" action="{% url 'main_page' %}">
+        {% csrf_token %}
+        <div class="contacts__inputbox">
+          <input type="text" class="data__inputbox" name="name" placeholder="Jméno" value="{{ name }}" required>
+          <input type="text" class="data__inputbox" name="surname" placeholder="Příjmení" value="{{ surname }}" required>
+        </div>
+
+        <div class="contacts__inputbox">
+          <input type="text" class="data__inputbox" name="email" placeholder="Email" value="{{ email }}" required>
+          <input type="text" class="data__inputbox" name="phone" placeholder="Telefonní číslo" value="{{ phone }}">
+        </div>
+
+        <textarea class="data__textarea" name="message" id="message__textarea" placeholder="Zpráva" value="{{ message }}" required></textarea>
+
+        <div class="contacts__communication">
+          <div class="contacts__info">
+            <div class="contacts__icon">
+              <i class="fas fa-mail-bulk"></i>
+            </div>
+            <div class="contacts__text">
+              info@kenex.cz <br> Husitská 75/25, Praha 3, 130 00
+            </div>
+          </div>
+          <input type="submit" class="send__btn" value="Odeslat">
+        </div>
+
+      </form>
+    </div>
+
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__wrap">
+
+        <div class="footer__left">
+          <a href="#" class="logo">
+            <div class="logo__wrap logo__footer">
+              <img src="{% static 'icons/logo/logo.svg' %}" alt="logo" class="logo__img">
+              <div class="logo__text">
+                Smart fólie
+                <br>
+                <span>© Kenex s.r.o.</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="footer__submenu">
+            <a href="https://www.kenex.cz/ochrana-osobnich-udaju/">Ochrana osobních údajů</a>
+            <div></div>
+            <a href="https://www.kenex.cz/vse-o-nakupu/">Obchodní podmínky</a>
+            <div></div>
+            <a href="https://www.kenex.cz/o-nas/">O nás</a>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <nav class="nav footer__nav">
+            <ul class="nav__list">
+              <li class="nav__item footer__nav">
+                <a href="#uvod" class="scroll_to">Úvod</a>
+              </li>
+              <li class="nav__item footer__nav">
+                <a href="#vyhody" class="scroll_to">Výhody</a>
+              </li>
+              <li class="nav__item footer__nav">
+                <a href="#vlastnosti" class="scroll_to">Vlastnosti</a>
+              </li>
+              <li class="nav__item footer__nav">
+                <a href="#pouziti" class="scroll_to">Použití</a>
+              </li>
+              <li class="nav__item footer__nav">
+                <a href="#videa" class="scroll_to">Videa</a>
+              </li>
+              <li class="nav__item footer__nav">
+                <a href="#galerie" class="scroll_to">Galerie</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__links">
+            <div class="links">
+              <a href="https://www.facebook.com/Kenex.cz/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kenexcz/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.kenex.cz/" target="_blank">
+                <i class="far fa-compass"></i>
+              </a>
+            </div>
+            <div class="admin">
+              <a href="http://127.0.0.1:8000/admin/" target="_blank">
+                <i class="far fa-user-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <div class="popup">
+    <div class="popup__wrap">
+      <div class="popup__data">
+        <div class="popup__text">
+          Děkujeme za zprávu!
+          <br>
+          Pokusíme se Vám odpovědět co nejdříve.
+        </div>
+        <div class="popup__icon">
+          <i class="far fa-check-circle"></i>
+        </div>
+      </div>
+      <i class="fas fa-times popup__close"></i>
+    </div>
+  </div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
