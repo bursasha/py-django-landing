@@ -27,31 +27,6 @@ window.addEventListener("DOMContentLoaded", () => {
   })
 
 
-  // Work with video
-  const videos = document.querySelectorAll('video')
-
-
-  videos.forEach((video) => {
-
-    const playBtn = video.nextSibling.nextSibling
-    // console.log(playBtn)
-
-    playBtn.addEventListener('click', () => {
-      video.play()
-      video.setAttribute('controls', 'controls')
-      playBtn.style.display = 'none'
-    })
-
-
-    video.addEventListener('ended', function () {
-      this.src = this.src
-      playBtn.style.display = 'block'
-      video.removeAttribute('controls')
-    })
-
-  })
-
-
   // Work with page block anchors
   const anchors = document.querySelectorAll('.scroll_to')
 
