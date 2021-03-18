@@ -164,7 +164,7 @@ a:hover {
 .intro__btn_buy {
   width: 150px;
   height: 55px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
@@ -184,6 +184,7 @@ a:hover {
 
 .intro__video > iframe {
   border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -191,8 +192,8 @@ a:hover {
 /* Section pros */
 
 .pros {
-  padding: 100px 0;
-  min-height: 800px;
+  padding: 50px 0;
+  min-height: 720px;
 }
 
 .subtitle span {
@@ -356,8 +357,8 @@ a:hover {
 /* Section usage */
 
 .usage {
-  padding: 100px 0;
-  min-height: 900px;
+  padding: 30px 0 80px 0;
+  min-height: 551px;
 }
 
 .title > span {
@@ -468,8 +469,8 @@ a:hover {
 /* Section videos */
 
 .videos {
-  min-height: 564px;
-  padding: 50px 0 60px 0;
+  min-height: 721px;
+  padding: 84px 0;
   background: url("../img/sections_bg/videos_bg.png") center center/cover no-repeat;
 }
 
@@ -539,6 +540,7 @@ a:hover {
 
 .content__video > iframe {
   border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -546,8 +548,8 @@ a:hover {
 /* Section gallery */
 
 .gallery {
-  min-height: 760px;
-  padding: 50px 0 90px 0;
+  min-height: 757px;
+  padding: 50px 0;
 }
 
 .gallery__content {
@@ -572,6 +574,7 @@ a:hover {
 
 .carousel__img {
   border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   width: 300px;
   height: 400px;
   margin: 0 auto 25px auto;
@@ -696,8 +699,8 @@ a:hover {
 /* Section contacts */
 
 .contacts {
-  min-height: 660px;
-  padding: 15px 20px 100px 20px;
+  min-height: 720px;
+  padding: 60px 0;
 }
 
 .contacts__content {
@@ -732,7 +735,7 @@ a:hover {
 }
 
 .contacts__communication {
-  margin-top: 15px;
+  margin-top: 45px;
   width: 600px;
   height: 50px;
   display: flex;
@@ -740,8 +743,17 @@ a:hover {
   align-items: center;
 }
 
-.contacts__info {
+.contacts__mail {
+  width: 600px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
 }
 
 .contacts__icon {
@@ -782,6 +794,11 @@ a:hover {
 
 .send__btn:hover {
   background-color: #800000;
+}
+
+.contacts__address {
+  display: flex;
+  align-items: center;
 }
 
 
