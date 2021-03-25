@@ -47,12 +47,12 @@ window.addEventListener("DOMContentLoaded", () => {
   // Work with popup window
   function popupOpen() {
     document.querySelector('.popup').classList.add('popup__active')
-    document.body.style.overflow = 'hidden'
+    // document.body.style.overflow = 'hidden'
   }
 
   function popupClose() {
     document.querySelector('.popup').classList.remove('popup__active')
-    document.body.style.overflow = 'visible'
+    // document.body.style.overflow = 'visible'
   }
 
   const buttonSend = document.querySelector('.send__btn')
