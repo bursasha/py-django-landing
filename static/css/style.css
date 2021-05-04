@@ -378,9 +378,6 @@ a:hover {
   background-color: #ffffff;
   margin: 0 auto 20px auto;
   padding: 0 25px 25px 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   overflow: hidden;
   transition: all 0.7s ease;
   cursor: pointer;
